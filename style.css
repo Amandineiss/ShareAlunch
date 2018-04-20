@@ -72,4 +72,34 @@ li a:hover {
     margin:25px;
 }
 
+h3{
+    text-align: center;
+}
+
+.bonjour{
+    text-align: center;
+   padding-left: 460px;
+    display: inline;
+}
+
+.btn2{
+      color:white;
+    background-color:#333333;
+text-align: center;
+    border:0px;
+    font-size: 30px;
+
+}
+
+#mapholder{
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
 
