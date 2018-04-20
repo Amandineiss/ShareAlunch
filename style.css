@@ -74,6 +74,7 @@ li a:hover {
 
 h3{
     text-align: center;
+    font-size: 30px;
 }
 
 .bonjour{
@@ -94,11 +95,24 @@ text-align: center;
 #mapholder{
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 30px;
 }
 
+h4{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
 
+.container{
+    text-align: center;
+}
 
-
+.my-fa{
+    font-size: 60px;
+    color:orange;
+}
 
 
 

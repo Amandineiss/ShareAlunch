@@ -38,7 +38,7 @@
             <P>Share A Lunch</P>
         </div>
         <div>
-            <a href="#espace" onclick="ga('send', 'event', cta, application)> <button type="button" class="btn btn-secondary btn-lg center">Lien vers l'application</button></a>
+            <a href="#espace" onclick="ga('send', 'event', cta, application)"> <button type="button" class="btn btn-secondary btn-lg center">Lien vers l'application</button></a>
         </div>
         <div id="espace">
             
@@ -63,45 +63,75 @@
             <button type="button" class="btn1 btn-secondary btn-lg center">PROPOSER UN REPAS</button>
             <button type="button" class="btn1 btn-secondary btn-lg center">CONSOMMER UN REPAS</button>
         </div>
-            <h3>Où trouver un repas ?</h3>
-    <p class="demo"></p>
-<a href="#getLocation" class="bonjour"><button class="btn2" onclick="getLocation()">Localiser les repas proches de moi</button></a>
-<div id="mapholder"></div>
-<script>
-var x = document.getElementById("demo");
-function getLocation() {
-    if (navigator.geolocation) {
+        <h3>Où trouver un repas ?</h3>
+        <p class="demo"></p>
+        <a href="#getLocation" class="bonjour"><button class="btn2" onclick="getLocation()">Localiser les repas proches de moi</button></a>
+        <div id="mapholder"></div>
+        <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+        if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else {
+        } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-function showPosition(position) {
-    var latlon = position.coords.latitude + "," + position.coords.longitude;
-    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    +latlon+"&zoom=16&size=1400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
-    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-}
-//To use this code on your website, get a free API key from Google.
-//Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-function showError(error) {
-    switch(error.code) {
+        }
+        }
+        function showPosition(position) {
+        var latlon = position.coords.latitude + "," + position.coords.longitude;
+        var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+        +latlon+"&zoom=16&size=1400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+        document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+        }
+        //To use this code on your website, get a free API key from Google.
+        //Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+        function showError(error) {
+        switch(error.code) {
         case error.PERMISSION_DENIED:
-            x.innerHTML = "User denied the request for Geolocation."
-            break;
+        x.innerHTML = "User denied the request for Geolocation."
+        break;
         case error.POSITION_UNAVAILABLE:
-            x.innerHTML = "Location information is unavailable."
-            break;
+        x.innerHTML = "Location information is unavailable."
+        break;
         case error.TIMEOUT:
-            x.innerHTML = "The request to get user location timed out."
-            break;
+        x.innerHTML = "The request to get user location timed out."
+        break;
         case error.UNKNOWN_ERROR:
-            x.innerHTML = "An unknown error occurred."
-            break;
-    }
-}
-</script>
-        <h4>This is heading 4</h4>
+        x.innerHTML = "An unknown error occurred."
+        break;
+        }
+        }
+        </script>
+            <h4>Pourquoi rejoindre la communauté de lunchers ?</h4>
+      <div class="container">
+  <div class="row">
+    <div class="col">
+        <i class="fas fa-utensils my-fa"></i>
+      <p>Manger sain</p>
+    </div>
+    <div class="col">
+        <i class="far fa-money-bill-alt my-fa"></i>
+      <p>Faire des économies</p>
+    </div>
+    <div class="col">
+        <i class="far fa-clock my-fa"></i>
+        <p>Gagner du temps</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+        <i class="fas fa-comments my-fa"></i>
+      <p>Faire des rencontres</p>
+    </div>
+    <div class="col">
+        <i class="fas fa-users my-fa"></i>
+      <p>Grande communauté</p>
+    </div>
+    <div class="col">
+        <i class="fab fa-cc-mastercard my-fa"></i>
+      <p>Plusieurs moyens de paiement</p>
+    </div>
+  </div>
+</div>
         <h5>This is heading 5</h5>
         <h6>This is heading 6</h6>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
