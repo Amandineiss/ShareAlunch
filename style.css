@@ -75,6 +75,7 @@ li a:hover {
 h3{
     text-align: center;
     font-size: 30px;
+    padding-top: 50px;
 }
 
 .bonjour{
@@ -102,7 +103,7 @@ h4{
     text-align: center;
     padding-top: 15px;
     font-size: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .container{
