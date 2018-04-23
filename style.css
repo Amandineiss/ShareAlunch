@@ -226,3 +226,14 @@ h5::after {
     text-align: center;
     padding-top: 50px;
 }
+
+.mercii{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.icon-love{
+    color: orange;
+}
