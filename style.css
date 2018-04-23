@@ -87,9 +87,10 @@ h3{
 .btn2{
       color:white;
     background-color:#333333;
-text-align: center;
+    text-align: center;
     border:0px;
     font-size: 30px;
+    display:inline;
 
 }
 
@@ -122,5 +123,15 @@ h5{
     padding-bottom: 50px;    
 }
 
+.icon-perso{
+    color: orange;
+    font-size: 20px !important;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.icon-perso2{
+    color:orange;
+    padding-right: 900px;
+}
 
 
